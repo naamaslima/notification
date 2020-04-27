@@ -20,7 +20,7 @@ USE Notification\Email;
 $email = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port (587)",
     "from@email.com", "From Name");
 
-$email->sendEmail("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+$email->sendEmail("address_to@email.com", "reply_to@email.com", "Replay Name", "Subject", "Body");
 ```
 
 Note que toda a configuração do envio do e-mail está utilizando o método mágico construtor! Uma vez invocado o método construtor dentro da sua aplicação, seu sistema estar'á apto a efetuar os disparos.
